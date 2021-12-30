@@ -1,0 +1,17 @@
+ERROR - 2021-12-15 20:03:59 --> Error connecting to the database: Unknown database 'ci_cart_online'
+CRITICAL - 2021-12-15 20:03:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ci_cart_online'
+#0 E:\Amikom Kuliah\xampp\htdocs\ci_cart_online\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\Amikom Kuliah\xampp\htdocs\ci_cart_online\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#2 E:\Amikom Kuliah\xampp\htdocs\ci_cart_online\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#3 E:\Amikom Kuliah\xampp\htdocs\ci_cart_online\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('123', 'kode_produk', Array, NULL)
+#4 E:\Amikom Kuliah\xampp\htdocs\ci_cart_online\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('kode_produk', 'kode_produk', '123', Array, Array)
+#5 E:\Amikom Kuliah\xampp\htdocs\ci_cart_online\system\BaseModel.php(1347): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#6 E:\Amikom Kuliah\xampp\htdocs\ci_cart_online\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#7 E:\Amikom Kuliah\xampp\htdocs\ci_cart_online\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#8 E:\Amikom Kuliah\xampp\htdocs\ci_cart_online\app\Controllers\Produk.php(93): CodeIgniter\Model->insert(Array)
+#9 E:\Amikom Kuliah\xampp\htdocs\ci_cart_online\system\CodeIgniter.php(824): App\Controllers\Produk->proses_input()
+#10 E:\Amikom Kuliah\xampp\htdocs\ci_cart_online\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#11 E:\Amikom Kuliah\xampp\htdocs\ci_cart_online\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\Amikom Kuliah\xampp\htdocs\ci_cart_online\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}

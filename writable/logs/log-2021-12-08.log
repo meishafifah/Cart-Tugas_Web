@@ -1,0 +1,16 @@
+CRITICAL - 2021-12-08 05:45:53 --> Undefined index: aksi
+#0 H:\web-dev\ci_cart_online\app\Controllers\Keranjang.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'H:\\web-dev\\ci_c...', 40, Array)
+#1 H:\web-dev\ci_cart_online\system\CodeIgniter.php(824): App\Controllers\Keranjang->proses()
+#2 H:\web-dev\ci_cart_online\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#3 H:\web-dev\ci_cart_online\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\web-dev\ci_cart_online\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 H:\web-dev\ci_cart_online\system\Commands\Server\rewrite.php(43): require_once('H:\\web-dev\\ci_c...')
+#6 {main}
+CRITICAL - 2021-12-08 05:46:45 --> Undefined variable: proses_k
+#0 H:\web-dev\ci_cart_online\app\Controllers\Keranjang.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'H:\\web-dev\\ci_c...', 43, Array)
+#1 H:\web-dev\ci_cart_online\system\CodeIgniter.php(824): App\Controllers\Keranjang->proses()
+#2 H:\web-dev\ci_cart_online\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Keranjang))
+#3 H:\web-dev\ci_cart_online\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\web-dev\ci_cart_online\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 H:\web-dev\ci_cart_online\system\Commands\Server\rewrite.php(43): require_once('H:\\web-dev\\ci_c...')
+#6 {main}
